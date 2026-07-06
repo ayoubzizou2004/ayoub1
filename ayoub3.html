@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Together</title>
+
+    <link rel="stylesheet" href="ayoob3.css">
+</head>
+
+<body>
+   
+    <!-- الشريط -->
+    <header class="navbar">
+        <h2 class="logo">FOREVER TOGETHER</h2>
+        <nav>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
+
+    <!-- INTRO -->
+    <section id="intro" class="intro">
+        <h1>❤️ FINAL CHALLENGE ❤️</h1>
+        <p>
+            Before reaching the end...<br>
+            You have to solve three little puzzles.<br>
+            Good Luck ❤️
+        </p>
+        <button id="startBtn">START</button>
+    </section>
+
+    <!-- GAME 1 -->
+    <section id="game1" class="game hidden">
+
+        <h2>PUZZLE 1</h2>
+
+        <p>Arrange the colors in the correct order</p>
+
+        <div class="colors" id="colors">
+
+            <div class="color purple" draggable="true"></div>
+            <div class="color pink" draggable="true"></div>
+            <div class="color blue" draggable="true"></div>
+            <div class="color yellow" draggable="true"></div>
+        
+        </div>
+
+        <div id="dropZone" class="drop-zone"></div>
+
+        <button id="checkBtn">CHECK</button>
+
+        <div id="success" class="success hidden">
+            Perfect ❤️ Next challenge is coming...
+        </div>
+
+        <div id="fail" class="fail hidden">
+            Wrong order ❌
+            <button id="retryBtn">RETRY</button>
+        </div>
+
+    </section>
+
+    <!-- GAME 2 -->
+    <section id="game2" class="game hidden">
+
+        <h2>PUZZLE 2 🔐</h2>
+    
+        <p>Shkon nti?</p>
+    
+        <div class="lock-box" id="lockBox">
+    
+            <div class="lock">🔒</div>
+    
+            <input type="text" id="answer" placeholder="Enter password">
+    
+            <button id="unlockBtn">UNLOCK</button>
+    
+            <div id="lockMsg"></div>
+    
+        </div>
+    
+    </section>
+
+    <!-- TRANSITION -->
+    <div id="transition" class="transition hidden">
+        <h1>Preparing next challenge...</h1>
+    </div>
+
+    <script src="game.js"></script>
+
+
+<!-- ===================== -->
+<!-- FINAL PAGE -->
+<!-- ===================== -->
+
+<section id="finalPage" class="game hidden">
+
+    <header class="finalNavbar">
+
+        <h2>❤️ FINALLY ❤️</h2>
+
+    </header>
+
+    <div class="finalContent">
+
+        <h1>This is for you ❤️</h1>
+        <p>مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو مياو</p>
+    </div>
+
+</section>
+
+</body>
+</html>

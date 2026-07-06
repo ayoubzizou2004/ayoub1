@@ -1,0 +1,349 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    min-height:100vh;
+    color:white;
+    width:100%;
+    height:100%;
+
+    margin:0;
+    padding:0;
+    background:
+    radial-gradient(circle at bottom, rgba(170,0,255,.25), transparent 45%),
+    radial-gradient(circle at top, rgba(80,0,255,.18), transparent 40%),
+    #12001f;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    background:#4a0072;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+}
+
+/* ================= INTRO (PAGE 1) ================= */
+.intro{
+    min-height:calc(100vh - 70px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.intro h1{
+    font-size:90px;   /* 🔥 زدت الحجم */
+    color:#d58cff;
+}
+
+.intro p{
+    margin-top:30px;
+    font-size:30px;   /* 🔥 زدت الحجم */
+    max-width:800px;
+    line-height:1.8;
+}
+
+/* ================= GAME ================= */
+.game{
+    min-height:calc(100vh - 70px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.game h2{
+    font-size:65px;   /* 🔥 أكبر */
+    color:#d58cff;
+}
+
+.game p{
+    font-size:26px;   /* 🔥 أكبر */
+    margin-top:20px;
+}
+
+/* ================= COLORS ================= */
+.colors{
+    display:flex;
+    gap:20px;
+    margin-top:25px;
+}
+
+.color{
+    font-size:60px;   /* 🔥 أكبر */
+    cursor:grab;
+}
+
+/* ================= DROP ZONE ================= */
+.drop-zone{
+    width:320px;
+    height:90px;
+    border:2px dashed white;
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ================= SUCCESS / FAIL ================= */
+.success{
+    margin-top:20px;
+    color:#00ffcc;
+    font-size:22px;
+}
+
+.fail{
+    margin-top:20px;
+    color:red;
+    font-size:20px;
+}
+
+/* ================= HIDDEN ================= */
+.hidden{
+    display:none !important;
+}
+
+.colors{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.color{
+    width:70px;
+    height:70px;
+    border-radius:15px;
+    cursor:grab;
+    transition:.2s;
+}
+
+.color:active{
+    transform:scale(1.1);
+    cursor:grabbing;
+}
+
+/* الألوان */
+.blue{
+    background:#00b7ff;
+}
+
+.pink{
+    background:#ff4fd8;
+}
+
+.yellow{
+    background:#ffd000;
+}
+
+.purple{
+    background:#b84dff;
+}
+
+.lock-box{
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    padding:25px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(180,77,255,0.4);
+
+    box-shadow:0 0 20px rgba(184,77,255,0.4);
+}
+
+.lock{
+    font-size:80px;
+    transition:0.3s;
+}
+
+#answer{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    text-align:center;
+}
+
+
+#startBtn,
+#checkBtn,
+#unlockBtn,
+#retryBtn{
+
+    margin-top:25px;
+    padding:16px 45px;
+
+    border:none;
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:22px;
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(135deg,#b84dff,#7000ff);
+
+    box-shadow:
+        0 0 12px #b84dff,
+        0 0 30px rgba(184,77,255,.6);
+
+    transition:.25s;
+}
+
+#startBtn:hover,
+#checkBtn:hover,
+#unlockBtn:hover,
+#retryBtn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+        0 0 20px #d58cff,
+        0 0 45px rgba(213,140,255,.9);
+}
+
+#startBtn:active,
+#checkBtn:active,
+#unlockBtn:active,
+#retryBtn:active{
+
+    transform:scale(.95);
+
+}
+
+
+
+
+/* ===================== */
+/* FINAL PAGE */
+/* ===================== */
+
+#game2{
+    transition:opacity .5s ease;
+}
+
+#finalPage{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background-image:url("miao.png"); /* ضع اسم صورتك هنا */
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+.finalNavbar{
+
+    width:100%;
+    height:70px;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 0 20px rgba(255,255,255,.6);
+
+}
+
+.finalNavbar h2{
+
+    color:black;
+    font-size:30px;
+
+}
+
+.finalContent h1{
+
+    color:#ffffff;
+    font-size:70px;
+    text-shadow:
+        0 0 10px #ffffff,
+        0 0 25px #ffffff;
+}
+
+.finalContent p{
+
+    margin-top:30px;
+    color:white;
+
+    font-family:"Cormorant Garamond", serif;
+    font-style:italic;
+
+    font-size:28px;
+    line-height:2;
+    text-align:justify;
+}
+.finalContent{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding-top:clamp(20px, 6vh, 80px);
+    text-align:center;
+}
+
+.leftText h1{
+    font-size:clamp(40px,5vw,80px);
+    color:white;
+}
+
+.message{
+    padding:30px;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    color:white;
+    font-size:clamp(18px,2vw,28px);
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .finalContainer{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+}
+.finalContent{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

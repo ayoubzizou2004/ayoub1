@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoooub</title>
+
+    <link rel="stylesheet" href="ayoob.css">
+</head>
+
+<body>
+  
+    <!-- الشريط العلوي -->
+    <header class="navbar">
+
+        <h2 class="logo">ayooooub!!</h2>
+
+        <button id="themeBtn">🌙</button>
+
+        <nav>
+            <a href="#">Home</a>
+        </nav>
+
+    </header>
+
+    <!-- المحتوى الرئيسي (تم إضافته فقط للتنظيم وليس تغيير الشكل) -->
+    <div class="main-content">
+
+        <!-- الإطار -->
+        <div class="box">
+
+            <h2>HI MAMA!</h2>
+
+            <p>
+                This is my first website, and I created it especially for you,
+                my Salsabil, because I love you so much.
+                I put my time, effort, and heart into making it,
+                hoping it brings a smile to your face.
+                It may not be perfect, but every part of it was made with love.
+                I hope you like it and always remember how special you are to me.
+            </p>
+
+        </div>
+
+        <!-- العناوين -->
+        <div class="titles">
+
+            <a href="ayoub1.html" class="title title1">
+                BEST MEMORIES
+            </a>
+
+            <a href="ayoub2.html" class="title title2">
+                THANK YOU MI HERMOSA
+            </a>
+
+            <a href="ayoub3.html" class="title title3">
+                PLAY WITH ME
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- زر الوضع الليلي -->
+    <script>
+
+        const btn = document.getElementById("themeBtn");
+
+        btn.onclick = function () {
+
+            document.body.classList.toggle("light");
+
+            if (document.body.classList.contains("light")) {
+                btn.textContent = "☀️";
+            } else {
+                btn.textContent = "🌙";
+            }
+
+        };
+
+    </script>
+
+    <!-- انتقال الصفحات -->
+    <script>
+
+        const links = document.querySelectorAll("a");
+
+        links.forEach(link => {
+
+            link.addEventListener("click", function (e) {
+
+                if (this.getAttribute("href").startsWith("#"))
+                    return;
+
+                e.preventDefault();
+
+                document.body.classList.add("fade-out");
+
+                setTimeout(() => {
+                    window.location.href = this.href;
+                }, 500);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
